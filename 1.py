@@ -20,3 +20,7 @@ for i in dict1:
 
 
 print(int(3.5))
+
+c = ["wq","ww","pp","op"]
+
+print()

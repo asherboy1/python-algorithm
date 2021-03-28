@@ -32,4 +32,20 @@
 from deque import Deque
 
 def huiwenci(str):
-    flag = False
+    flag = True
+    d = Deque()
+
+    for i in str:
+        d.addFront(i)
+    
+    while d.size() > 1 and flag:
+        first = d.removeFront()
+        last = d.removeRear()
+
+        if first != last:
+            flag = False
+    
+    return flag
+
+print(huiwenci("hlh"))
+print(huiwenci("hlolh"))
