@@ -7,7 +7,7 @@ class UnorderedList:
     def isEmpty(self):
         return self.head == None
     
-    def add(self,item):
+    def add(self,item):     #从链表头 加入
         temp = Node(item)
         temp.setNext(self.head)     #注意逻辑 次序  否则结果严重
         self.head = temp
@@ -26,7 +26,7 @@ class UnorderedList:
         found = False
 
         while current != None and not found:
-            if current != item:
+            if current.getData() != item:
                 current = current.getNext()
             else:
                 found = True
