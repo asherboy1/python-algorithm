@@ -6,7 +6,7 @@ def Selection_sort(list1):
         position = 0
         for i in range(1,n+1):
             if list1[i] > list1[position]:
-                position = i        #记录位置
+                position = i        #记录最大项位置
 
         tmp = list1[position]
         list1[position] = list1[n]
